@@ -15,8 +15,26 @@
             <input type="password" id="password" placeholder="Mot de passe" required>
             <button type="submit">Se connecter</button>
         </form>
-        <p id="error-message"></p>
+        <p id="error-message" style="color: red; display: none;">Mot de passe invalide. Assurez-vous qu'il contient 'nut'.</p>
     </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Empêche l'envoi du formulaire par défaut
+
+            const password = document.getElementById('password').value;
+
+            // Vérification si le mot de passe contient "nut"
+            if (password.includes('nut')) {
+                // Si oui, redirection vers la page d'accueil
+                window.location.href = "accueil.html"; // Remplace "accueil.html" par l'URL de ta page d'accueil
+            } else {
+                // Si non, afficher un message d'erreur
+                document.getElementById('error-message').style.display = 'block';
+            }
+        });
+    </script>
+
     <script src="script.js"></script>
 </body>
 </html>
