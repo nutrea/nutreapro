@@ -1,112 +1,57 @@
-/* Styles généraux */
+/* Style global pour le corps de la page */
 body {
     font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+    background-color: #f4f4f4;
+}
+
+/* Conteneur de la zone de connexion */
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
     text-align: center;
 }
 
-/* Style du logo */
+/* Style pour l'image du logo */
 .logo {
-    display: block;
-    margin: 0 auto 20px auto;
-    width: 150px; /* Ajuste la taille du logo */
+    width: 100px; /* Ajuste la taille du logo selon tes besoins */
+    margin-bottom: 20px;
 }
 
-/* Conteneur de la connexion */
-.login-container {
-    background: white;
-    padding: 20px;
-    margin: 50px auto;
-    width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-/* Titres */
-h2 {
-    color: #333;
-}
-
-/* Champs de formulaire */
+/* Style des champs de saisie */
 input {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 4px;
     border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
-/* Boutons */
+/* Style du bouton de soumission */
 button {
     width: 100%;
     padding: 10px;
-    background-color: #28a745;
+    background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #45a049;
 }
 
-/* Message d'erreur */
+/* Style du message d'erreur */
 #error-message {
     color: red;
-    font-size: 14px;
-}
-
-/* En-tête du tableau de bord */
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border-bottom: 2px solid #ddd;
-}
-
-header button {
-    background-color: #dc3545;
-    margin-top: 10px;
-}
-
-header button:hover {
-    background-color: #c82333;
-}
-
-/* Conteneur principal */
-main {
-    background: white;
-    padding: 20px;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 600px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-/* Listes */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background: #e9ecef;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-}
-
-ul li a:hover {
-    text-decoration: underline;
+    display: none; /* Le message est caché par défaut */
 }
