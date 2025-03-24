@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord - Nutrea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo Nutrea" class="logo">
+        <h1>Bienvenue, Revendeur</h1>
+        <button onclick="logout()">Déconnexion</button>
+    </header>
+    <main>
+        <section>
+            <h2>Formations</h2>
+            <ul id="formation-list">
+                <li><a href="formations/formation1.pdf" download>Télécharger Formation 1</a></li>
+                <li><a href="formations/formation2.pdf" download>Télécharger Formation 2</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Suivi des Ventes</h2>
+            <p>Ventes totales : <span id="totalVentes">0</span> €</p>
+            <p>Bonus actuel : <span id="bonus">0</span> €</p>
+            <h3>Historique des Paiements</h3>
+            <ul id="historique-paiements"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
